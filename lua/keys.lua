@@ -79,6 +79,7 @@ key_mapper('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 
 -- tree filebrowser commands
 key_mapper('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+key_mapper('n', "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
 -- toggleterm setup
 
 function _G.set_terminal_keymaps()
